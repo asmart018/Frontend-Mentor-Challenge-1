@@ -1,0 +1,165 @@
+:root {
+  --primary-dark-cyan: hsl(158, 36%, 37%);
+  --primary-cream: hsl(30, 38%, 92%);
+  --neutral-dark-blue: hsl(212, 21%, 14%);
+  --neutral-gray-blue: hsl(228, 12%, 48%);
+  --neutral-white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  font-size: 14px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.d-flex {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--neutral-white);
+  border-radius: 8px;
+  margin: 1rem;
+  max-width: 800px;
+}
+
+.card-image {
+  background-image: url(./images/image-product-mobile.jpg);
+  background-clip: border-box;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 8px 8px 0 0;
+  min-height: 30vh;
+}
+
+.card-body {
+  padding: 1.9rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Fraunces, "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.text-db {
+  color: var(--neutral-dark-blue);
+}
+
+.text-gb {
+  color: var(--neutral-gray-blue);
+}
+
+.text-dc {
+  color: var(--primary-dark-cyan);
+}
+
+.text-white {
+  color: var(--neutral-white);
+}
+
+.bg-dc {
+  background-color: var(--primary-dark-cyan);
+}
+
+.bg-cream {
+  background-color: var(--primary-cream);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.fraunces {
+  font-family: Fraunces, "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.button {
+  border: none;
+  border-radius: 8px;
+  height: 15%;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.margin-h1 {
+  margin: 0;
+}
+
+.margin-price {
+  margin: 2rem 0;
+  display: flex;
+}
+
+.margin-lr {
+  margin: 0 1rem;
+}
+
+.perfume {
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    display: flex;
+    min-height: 500px;
+  }
+
+  .card-body {
+    flex: 1 1 50%;
+    padding: 2rem;
+  }
+
+  .card-image {
+    background-image: url(./images/image-product-desktop.jpg);
+    border-radius: 8px 0 0 8px;
+    flex: 1 1 50%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Fraunces, "Times New Roman", Times, serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  
+  p {
+    line-height: 2rem;
+  }
+
+  .button {
+    height: 10%;
+  }
+  .margin-h1 {
+    margin: 1rem 0;
+  }
+}
